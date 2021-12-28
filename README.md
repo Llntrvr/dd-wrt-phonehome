@@ -9,7 +9,7 @@ This is usefull if you have a whole bunch of remote [dd-wrt](https://dd-wrt.com/
 ---
  1. Go to your dd-wrt router admin page.
  2. Click on ***Administration*** then ***Command*** tab.
- 3. Paste in [scripts.sh](https://github.com/Llntrvr/dd-wrt-phonehome/blob/main/script.sh) into the ***Commands*** input box.
+ 3. Paste in [script.sh](https://github.com/Llntrvr/dd-wrt-phonehome/blob/main/script.sh) into the ***Commands*** input box.
  4. Click on the ***Save Startup*** button.
  5. Paste in ```/bin/sh /tmp/phonehome.sh shutdown``` into the ***Commands*** input box.
  6. Click on the ***Save Shutdown*** button.
