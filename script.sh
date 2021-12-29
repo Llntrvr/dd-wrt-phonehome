@@ -21,7 +21,7 @@ cat << EOF >> /tmp/phonehome.sh
 	curl -s --insecure "\$FULLREQUEST&action=\$ACTION" >> /tmp/phonehome_output.txt;
 	cat /tmp/phonehome_output.txt;
 EOF
-echo '*/10 * * * *  root /bin/sh /tmp/phonehome.sh ping' >> /tmp/crontab
+echo '*/30 * * * *  root /bin/sh /tmp/phonehome.sh ping' > /etc/cron.d/phonehome
 stopservice cron && startservice cron 
 stopservice crond && startservice crond
 /bin/sh /tmp/phonehome.sh startup
